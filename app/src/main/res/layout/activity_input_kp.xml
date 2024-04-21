@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/head"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@color/primary"
+        android:gravity="center_vertical"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp">
+
+        <LinearLayout
+            android:id="@+id/header"
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:background="@color/primary"
+            android:gravity="center_vertical"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginStart="12dp"
+                android:contentDescription="Icon bar"
+                android:src="@drawable/linebar" />
+
+            <TextView
+                android:id="@+id/titleTextView"
+                android:layout_width="420dp"
+                android:layout_height="80dp"
+                android:background="@color/primary"
+                android:text="InKPTATIF"
+                android:layout_marginLeft="100dp"
+                android:layout_marginTop="20dp"
+                android:textColor="@android:color/white"
+                android:fontFamily="@font/jost"
+                android:textSize="24sp" />
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/judulkpp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Daftar Mahasiswa"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/primary"
+        android:textSize="32dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/jost"
+        android:layout_below="@id/head" />
+
+    <TextView
+        android:id="@+id/judulkp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kerja Praktik"
+        android:layout_centerHorizontal="true"
+        android:textSize="40dp"
+        android:textColor="@color/secondaryblue"
+        android:layout_below="@id/judulkpp"
+        android:fontFamily="@font/jost"
+        android:layout_marginTop="5dp"
+        />
+
+    <!-- Tulisan "Yang dibimbing" -->
+    <TextView
+        android:id="@+id/textViewBimbing"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Yang dibimbing"
+        android:textSize="15dp"
+        android:textFontWeight="800"
+        android:layout_below="@id/judulkp"
+        android:layout_marginStart="16dp"
+        android:fontFamily="@font/jost"
+        android:layout_marginTop="15dp"/>
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="3dp"
+        android:layout_below="@id/textViewBimbing"
+        android:layout_marginTop="6dp"
+        android:layout_marginEnd="100dp"
+        android:background="@color/primary" />
+
+    <!-- Tulisan "Yang diuji" -->
+    <TextView
+        android:id="@+id/textViewUji"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Yang diuji"
+        android:textSize="15dp"
+        android:textFontWeight="800"
+        android:layout_below="@id/judulkp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:fontFamily="@font/jost"
+        android:layout_alignParentEnd="true"/>
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="3dp"
+        android:layout_below="@id/textViewUji"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="200dp"
+        android:background="@color/secondaryblue" />
+
+    <!-- Fitur search -->
+    <RelativeLayout
+        android:id="@+id/searchlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewBimbing"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp">
+
+        <EditText
+            android:id="@+id/editTextSearch"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:hint="Search"
+            android:fontFamily="@font/jost"
+            android:background="@drawable/bg_input"
+            android:paddingStart="40dp"
+            android:paddingEnd="40dp"/>
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/magnifying_glass_solid"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="12dp"
+            android:contentDescription="Icon Search" />
+
+    </RelativeLayout>
+
+    <!-- Informasi mahasiswa -->
+    <LinearLayout
+        android:id="@+id/layoutMahasiswa"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/searchlayout"
+        android:layout_marginTop="42dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <!-- Icon user -->
+        <ImageView
+            android:id="@+id/imageViewUser"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/user" />
+
+
+
+        <!-- Nama dan NIM -->
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textViewNama"
+                android:textColor="@color/primary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/jost"
+                android:text="Nama Mahasiswa" />
+
+            <TextView
+                android:id="@+id/textViewNIM"
+                android:textColor="@color/secondaryblue"
+                android:layout_below="@+id/textViewNama"
+                android:fontFamily="@font/jost"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="NIM Mahasiswa" />
+        </RelativeLayout>
+
+        <!-- Button "Status" dan "Detail" -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/buttonStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/jost"
+                android:text="Done" />
+
+
+            <Button
+                android:id="@+id/buttonDetail"
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/jost"
+                android:text="Info" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigationView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/primary"
+        app:itemTextColor="@color/tulisan"
+        app:menu="@menu/bottom_navigation_menu" />
+</RelativeLayout>

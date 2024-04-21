@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:id="@+id/lupasandi"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <TextView
+        android:id="@+id/titleTextView"
+        android:layout_width="420dp"
+        android:layout_height="80dp"
+        android:background="@color/primary"
+        android:gravity="center"
+        android:text="InKPTATIF"
+        android:textColor="@android:color/white"
+        android:fontFamily="@font/jost"
+        android:textSize="24dp" />
+
+    <ImageView
+        android:id="@+id/appIconImageView"
+        android:layout_width="393dp"
+        android:layout_centerHorizontal="true"
+        android:layout_height="220dp"
+        android:layout_below="@id/titleTextView"
+        android:scaleType="fitXY"
+        android:src="@drawable/pictlogin" />
+
+    <ImageView
+        android:id="@+id/iconImageView"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_below="@id/appIconImageView"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="63dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/icon_lupa" />
+
+
+    <TextView
+        android:id="@+id/desclupa"
+        android:layout_width="223dp"
+        android:layout_height="80dp"
+        android:layout_below="@id/appIconImageView"
+        android:layout_marginLeft="110dp"
+        android:layout_marginTop="62dp"
+        android:background="@drawable/bg_input"
+        android:padding="10px"
+        android:text="Lupa Password? silahkan pergi ke Admin Teknik Informatika UIN Suska Riau"
+        android:textColor="@color/primary"
+        android:textFontWeight="600"
+        android:fontFamily="@font/jost"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/backButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Kembali"
+        android:textColor="@android:color/white"
+        android:background="@color/primary"
+        android:layout_below="@id/desclupa"
+        android:layout_marginTop="70dp"
+        android:layout_marginStart="20dp"
+        android:fontFamily="@font/jost"
+        android:layout_marginEnd="20dp"/>
+
+
+</RelativeLayout>

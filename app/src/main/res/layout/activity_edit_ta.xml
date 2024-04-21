@@ -1,0 +1,404 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="100000dp">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/header"
+                android:layout_width="wrap_content"
+                android:layout_height="80dp"
+                android:background="@color/primary"
+                android:gravity="center_vertical"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp">
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginStart="12dp"
+                    android:contentDescription="Icon bar"
+                    android:src="@drawable/linebar" />
+
+                <TextView
+                    android:id="@+id/titleTextView"
+                    android:layout_width="420dp"
+                    android:layout_height="80dp"
+                    android:background="@color/primary"
+                    android:text="InKPTATIF"
+                    android:layout_marginLeft="100dp"
+                    android:layout_marginTop="20dp"
+                    android:textColor="@android:color/white"
+                    android:fontFamily="@font/jost"
+                    android:textSize="24sp" />
+
+
+
+            </LinearLayout>
+
+
+
+            <!-- Informasi Mahasiswa -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="20dp">
+
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:src="@drawable/user"
+                    android:layout_gravity="center_horizontal"/>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Muhammad Aditya"
+                    android:textColor="@color/primary"
+                    android:textSize="25dp"
+                    android:fontFamily="@font/jost"
+                    android:layout_gravity="center_horizontal"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="12250111048"
+                    android:textColor="@color/secondaryblue"
+                    android:textSize="15dp"
+                    android:fontFamily="@font/jost"
+                    android:layout_gravity="center_horizontal"/>
+
+            </LinearLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp">
+
+
+                <TextView
+                    android:id="@+id/textViewBimbing"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Nilai Bimbingan"
+                    android:textSize="15dp"
+                    android:textFontWeight="800"
+                    android:layout_marginStart="16dp"
+                    android:fontFamily="@font/jost"
+                    android:layout_marginTop="15dp"/>
+                <View
+                    android:layout_width="200dp"
+                    android:layout_height="3dp"
+                    android:layout_below="@id/textViewBimbing"
+                    android:layout_marginTop="6dp"
+                    android:background="@color/secondaryblue" />
+
+                <TextView
+                    android:id="@+id/textViewUji"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Nilai Seminar"
+                    android:textSize="15dp"
+                    android:textFontWeight="800"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:fontFamily="@font/jost"
+                    android:layout_alignParentEnd="true"/>
+
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="3dp"
+                    android:layout_below="@id/textViewUji"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginStart="200dp"
+                    android:background="@color/primary" />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp">
+
+                <!-- TextView -->
+                <TextView
+                    android:id="@+id/detailpenilain1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sikap dan Attitude"
+                    android:textColor="@color/secondaryblue"
+                    android:textSize="20sp"
+                    android:fontFamily="@font/jost"
+                    android:layout_marginLeft="10dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentBottom="true" />
+
+
+                <!-- EditText -->
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignBaseline="@id/detailpenilain1"
+                    android:layout_alignBottom="@id/detailpenilain1"
+                    android:hint= "   90   "
+                    android:layout_marginRight="20dp"
+                    android:background="@color/secondaryblue"
+                    android:inputType="numberDecimal"
+                    android:textColorHint="@color/tulisan"
+                    android:textSize="16sp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp">
+
+                <!-- TextView -->
+                <TextView
+                    android:id="@+id/detailpenilaian2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Kemampuan Presentasi"
+                    android:textColor="@color/secondaryblue"
+                    android:textSize="20sp"
+                    android:fontFamily="@font/jost"
+                    android:layout_marginLeft="10dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentBottom="true" />
+
+                <!-- EditText -->
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignBaseline="@id/detailpenilaian2"
+                    android:layout_alignBottom="@id/detailpenilaian2"
+                    android:hint="   90   "
+                    android:layout_marginRight="20dp"
+                    android:background="@color/secondaryblue"
+                    android:inputType="numberDecimal"
+                    android:textColorHint="@color/tulisan"
+                    android:textSize="16sp" />
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp">
+
+                <!-- TextView -->
+                <TextView
+                    android:id="@+id/detailpenilaian3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Penguasaan Materi"
+                    android:textColor="@color/secondaryblue"
+                    android:textSize="20sp"
+                    android:fontFamily="@font/jost"
+                    android:layout_marginLeft="10dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentBottom="true" />
+
+                <!-- EditText -->
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignBaseline="@id/detailpenilaian3"
+                    android:layout_alignBottom="@id/detailpenilaian3"
+                    android:hint="   90   "
+                    android:layout_marginRight="20dp"
+                    android:background="@color/secondaryblue"
+                    android:inputType="numberDecimal"
+                    android:textColorHint="@color/tulisan"
+                    android:textSize="16sp" />
+
+            </RelativeLayout>
+
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp">
+
+                <!-- TextView -->
+                <TextView
+                    android:id="@+id/detailpenilaian4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Urgensi Terhadap Masalah"
+                    android:textColor="@color/secondaryblue"
+                    android:textSize="20sp"
+                    android:fontFamily="@font/jost"
+                    android:layout_marginLeft="10dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentBottom="true" />
+
+                <!-- EditText -->
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignBaseline="@id/detailpenilaian4"
+                    android:layout_alignBottom="@id/detailpenilaian4"
+                    android:hint="  90   "
+                    android:layout_marginRight="20dp"
+                    android:background="@color/secondaryblue"
+                    android:inputType="numberDecimal"
+                    android:textColorHint="@color/tulisan"
+                    android:textSize="16sp" />
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp">
+
+                <!-- TextView -->
+                <TextView
+                    android:id="@+id/detailpenilaian5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Relevansi Judul Penelitian"
+                    android:textColor="@color/secondaryblue"
+                    android:textSize="20sp"
+                    android:fontFamily="@font/jost"
+                    android:layout_marginLeft="10dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentBottom="true" />
+
+                <!-- EditText -->
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignBaseline="@id/detailpenilaian5"
+                    android:layout_alignBottom="@id/detailpenilaian5"
+                    android:hint="   90   "
+                    android:layout_marginRight="20dp"
+                    android:background="@color/secondaryblue"
+                    android:inputType="numberDecimal"
+                    android:textColorHint="@color/tulisan"
+                    android:textSize="16sp" />
+
+
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp">
+
+                <!-- TextView -->
+                <TextView
+                    android:id="@+id/detailpenilaian6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Total Nilai"
+                    android:textColor="@color/secondaryblue"
+                    android:textSize="20sp"
+                    android:fontFamily="@font/jost"
+                    android:layout_marginLeft="10dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentBottom="true" />
+
+                <!-- EditText -->
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignBaseline="@id/detailpenilaian6"
+                    android:layout_alignBottom="@id/detailpenilaian6"
+                    android:hint="   90   "
+                    android:layout_marginRight="20dp"
+                    android:background="@color/secondaryblue"
+                    android:inputType="numberDecimal"
+                    android:textColorHint="@color/tulisan"
+                    android:textSize="16sp" />
+
+
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+
+
+
+                <Button
+                    android:id="@+id/buttonSTA"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/jost"
+                    android:gravity="center"
+                    android:layout_gravity="center_horizontal"
+                    android:text="Simpan"
+                    android:layout_marginLeft="100dp"/>
+
+
+                <Button
+                    android:id="@+id/buttonXTA"
+                    android:layout_width="80dp"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/jost"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center"
+                    android:layout_marginLeft="20dp"
+                    android:text="Batal" />
+
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigationView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/primary"
+        app:itemTextColor="@color/tulisan"
+        app:menu="@menu/bottom_navigation_menu" />
+
+</RelativeLayout>

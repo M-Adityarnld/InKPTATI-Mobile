@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/header"
+                android:layout_width="wrap_content"
+                android:layout_height="80dp"
+                android:background="@color/primary"
+                android:gravity="center_vertical"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp">
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginStart="12dp"
+                    android:contentDescription="Icon bar"
+                    android:src="@drawable/linebar" />
+
+                <TextView
+                    android:id="@+id/titleTextView"
+                    android:layout_width="420dp"
+                    android:layout_height="80dp"
+                    android:background="@color/primary"
+                    android:text="InKPTATIF"
+                    android:layout_marginLeft="100dp"
+                    android:layout_marginTop="20dp"
+                    android:textColor="@android:color/white"
+                    android:fontFamily="@font/jost"
+                    android:textSize="24sp" />
+
+            </LinearLayout>
+
+
+
+            <!-- Informasi Mahasiswa -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="20dp">
+
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:src="@drawable/user"
+                    android:layout_gravity="center_horizontal"/>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ahmad Kurniawan"
+                    android:textColor="@color/primary"
+                    android:textSize="25dp"
+                    android:fontFamily="@font/jost"
+                    android:layout_gravity="center_horizontal"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="12250111000"
+                    android:textColor="@color/secondaryblue"
+                    android:textSize="15dp"
+                    android:fontFamily="@font/jost"
+                    android:layout_gravity="center_horizontal"/>
+
+            </LinearLayout>
+
+            <!-- Informasi Dosen -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Dosen Pembimbing I"
+                    android:fontFamily="@font/jost"
+                    android:textColor="@color/secondaryblue"
+                    android:layout_gravity="center_horizontal"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Bapak Fulan.S.T"
+                    android:fontFamily="@font/jost"
+                    android:textColor="@color/primary"
+                    android:layout_gravity="center_horizontal"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Dosen Pembimbing II"
+                    android:fontFamily="@font/jost"
+                    android:textColor="@color/secondaryblue"
+                    android:layout_marginTop="20dp"
+                    android:layout_gravity="center_horizontal"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ibu Fulanah.S.T"
+                    android:fontFamily="@font/jost"
+                    android:textColor="@color/primary"
+                    android:layout_gravity="center_horizontal"/>
+
+
+            </LinearLayout>
+
+            <!-- Informasi Skripsi -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Judul Tugas Akhir"
+                    android:textColor="@color/secondaryblue"
+                    android:fontFamily="@font/jost"
+                    android:layout_gravity="center_horizontal"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Analisis Performa Protokol Jaringan Ad-Hoc menggunakan Simulasi NS-3"
+                    android:layout_gravity="center_horizontal"
+                    android:fontFamily="@font/jost"
+                    android:textColor="@color/primary"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"/>
+
+                <TextView
+                    android:fontFamily="@font/jost"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Pada"
+                    android:textColor="@color/secondaryblue"
+                    android:layout_marginTop="20dp"
+                    android:layout_gravity="center_horizontal"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Kamis,18 April 2024/13.20-15.00/FST-305"
+                    android:fontFamily="@font/jost"
+                    android:textColor="@color/primary"
+                    android:layout_marginTop="10dp"
+                    android:layout_gravity="center_horizontal"/>
+
+
+                <TextView
+                    android:fontFamily="@font/jost"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Total Nilai"
+                    android:textColor="@color/secondaryblue"
+                    android:layout_marginTop="20dp"
+                    android:layout_gravity="center_horizontal"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/buttonStatus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/jost"
+                    android:gravity="center"
+                    android:layout_gravity="center_horizontal"
+                    android:text="90"
+                    android:layout_marginLeft="70dp"/>
+
+
+                <Button
+                    android:id="@+id/editButton"
+                    android:layout_width="80dp"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/jost"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center"
+                    android:layout_marginLeft="20dp"
+                    android:text="Edit" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigationView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/primary"
+        app:itemTextColor="@color/tulisan"
+        app:menu="@menu/bottom_navigation_menu" />
+
+</RelativeLayout>

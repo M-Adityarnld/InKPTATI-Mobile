@@ -1,0 +1,14 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/menu_home"
+        android:title="Home"
+        android:icon="@drawable/home" />
+    <item
+        android:id="@+id/inputKP"
+        android:title="Input KP"
+        android:icon="@drawable/input" />
+    <item
+        android:id="@+id/inputTA"
+        android:title="Input TA"
+        android:icon="@drawable/input" />
+</menu>

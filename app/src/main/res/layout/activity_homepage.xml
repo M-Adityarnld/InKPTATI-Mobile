@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+    <FrameLayout
+        android:id="@+id/fragmentContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+
+            <LinearLayout
+                android:id="@+id/header"
+                android:layout_width="wrap_content"
+                android:layout_height="80dp"
+                android:background="@color/primary"
+                android:gravity="center_vertical"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp">
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginStart="12dp"
+                    android:contentDescription="Icon bar"
+                    android:src="@drawable/linebar" />
+
+                <TextView
+                    android:id="@+id/titleTextView"
+                    android:layout_width="420dp"
+                    android:layout_height="80dp"
+                    android:background="@color/primary"
+                    android:text="InKPTATIF"
+                    android:layout_marginLeft="100dp"
+                    android:layout_marginTop="20dp"
+                    android:textColor="@android:color/white"
+                    android:fontFamily="@font/jost"
+                    android:textSize="24sp" />
+
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/salam"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Assalamu'alaikum,"
+                android:textColor="@color/primary"
+                android:textSize="32dp"
+                android:layout_marginLeft="20dp"
+                android:layout_below="@id/titleTextView"
+                android:fontFamily="@font/jost"
+                android:layout_marginTop="20dp"
+                />
+
+            <TextView
+                android:id="@+id/namadosen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bu Fulanah"
+                android:textSize="40dp"
+                android:layout_marginLeft="20dp"
+                android:textColor="@color/secondaryblue"
+                android:fontFamily="@font/jost"
+                android:layout_below="@id/salam"
+                />
+
+            <ImageView
+                android:id="@+id/Imagehome"
+                android:layout_width="322dp"
+                android:layout_height="200dp"
+                android:layout_below="@id/namadosen"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/homepict" />
+
+            <TextView
+                android:id="@+id/deschome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Aplikasi penginputan nilai untuk dosen pembimbing dan penguji,khusus untuk Kerja Praktik dan Tugas Akhir"
+                android:textSize="16sp"
+                android:textFontWeight="600"
+                android:layout_marginLeft="25dp"
+                android:gravity="left"
+                android:textColor="@color/primary"
+                android:layout_below="@id/Imagehome"
+                android:fontFamily="@font/jost"
+                android:layout_marginTop="20dp"/>
+
+            <!-- Navbar -->
+
+            <TextView
+                android:id="@+id/historykp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/deschome"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="41dp"
+                android:text="History penilaian KP, Bu Fulanah"
+                android:textColor="@color/primary"
+                android:fontFamily="@font/jost"
+                android:textSize="20dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:layout_below="@id/historykp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="7dp"
+                android:layout_marginRight="85dp"
+                android:background="@color/primary" />
+
+
+            <com.google.android.material.bottomnavigation.BottomNavigationView
+                android:id="@+id/bottomNavigationView"
+                android:background="@color/primary"
+                app:itemTextColor="@color/tulisan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/jost"
+                android:layout_alignParentBottom="true"
+                app:menu="@menu/bottom_navigation_menu" />
+
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+</RelativeLayout>
